@@ -1,0 +1,136 @@
+# Project: Projet5
+# Makefile created by Dev-C++ 5.9.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Euler.o Taylor2.o f1.o f2.o f3.o f4.o f5.o f6.o f9.o f8.o f7.o methodes.o fchoixm.o TableauReel.o fx1.o fx4.o fx2.o fx3.o fx5.o fx6.o fx7.o fx8.o fx9.o fy1.o fy2.o fy3.o fy4.o fy5.o fy6.o fy7.o fy8.o fy9.o abscisses.o ordonnees.o RemplirTableauAvecFonction.o Afficher.o
+LINKOBJ  = main.o Euler.o Taylor2.o f1.o f2.o f3.o f4.o f5.o f6.o f9.o f8.o f7.o methodes.o fchoixm.o TableauReel.o fx1.o fx4.o fx2.o fx3.o fx5.o fx6.o fx7.o fx8.o fx9.o fy1.o fy2.o fy3.o fy4.o fy5.o fy6.o fy7.o fy8.o fy9.o abscisses.o ordonnees.o RemplirTableauAvecFonction.o Afficher.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = Projet5.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Euler.o: Euler.c
+	$(CC) -c Euler.c -o Euler.o $(CFLAGS)
+
+Taylor2.o: Taylor2.c
+	$(CC) -c Taylor2.c -o Taylor2.o $(CFLAGS)
+
+f1.o: f1.c
+	$(CC) -c f1.c -o f1.o $(CFLAGS)
+
+f2.o: f2.c
+	$(CC) -c f2.c -o f2.o $(CFLAGS)
+
+f3.o: f3.c
+	$(CC) -c f3.c -o f3.o $(CFLAGS)
+
+f4.o: f4.c
+	$(CC) -c f4.c -o f4.o $(CFLAGS)
+
+f5.o: f5.c
+	$(CC) -c f5.c -o f5.o $(CFLAGS)
+
+f6.o: f6.c
+	$(CC) -c f6.c -o f6.o $(CFLAGS)
+
+f9.o: f9.c
+	$(CC) -c f9.c -o f9.o $(CFLAGS)
+
+f8.o: f8.c
+	$(CC) -c f8.c -o f8.o $(CFLAGS)
+
+f7.o: f7.c
+	$(CC) -c f7.c -o f7.o $(CFLAGS)
+
+methodes.o: methodes.c
+	$(CC) -c methodes.c -o methodes.o $(CFLAGS)
+
+fchoixm.o: fchoixm.c
+	$(CC) -c fchoixm.c -o fchoixm.o $(CFLAGS)
+
+TableauReel.o: TableauReel.c
+	$(CC) -c TableauReel.c -o TableauReel.o $(CFLAGS)
+
+fx1.o: fx1.c
+	$(CC) -c fx1.c -o fx1.o $(CFLAGS)
+
+fx4.o: fx4.c
+	$(CC) -c fx4.c -o fx4.o $(CFLAGS)
+
+fx2.o: fx2.c
+	$(CC) -c fx2.c -o fx2.o $(CFLAGS)
+
+fx3.o: fx3.c
+	$(CC) -c fx3.c -o fx3.o $(CFLAGS)
+
+fx5.o: fx5.c
+	$(CC) -c fx5.c -o fx5.o $(CFLAGS)
+
+fx6.o: fx6.c
+	$(CC) -c fx6.c -o fx6.o $(CFLAGS)
+
+fx7.o: fx7.c
+	$(CC) -c fx7.c -o fx7.o $(CFLAGS)
+
+fx8.o: fx8.c
+	$(CC) -c fx8.c -o fx8.o $(CFLAGS)
+
+fx9.o: fx9.c
+	$(CC) -c fx9.c -o fx9.o $(CFLAGS)
+
+fy1.o: fy1.c
+	$(CC) -c fy1.c -o fy1.o $(CFLAGS)
+
+fy2.o: fy2.c
+	$(CC) -c fy2.c -o fy2.o $(CFLAGS)
+
+fy3.o: fy3.c
+	$(CC) -c fy3.c -o fy3.o $(CFLAGS)
+
+fy4.o: fy4.c
+	$(CC) -c fy4.c -o fy4.o $(CFLAGS)
+
+fy5.o: fy5.c
+	$(CC) -c fy5.c -o fy5.o $(CFLAGS)
+
+fy6.o: fy6.c
+	$(CC) -c fy6.c -o fy6.o $(CFLAGS)
+
+fy7.o: fy7.c
+	$(CC) -c fy7.c -o fy7.o $(CFLAGS)
+
+fy8.o: fy8.c
+	$(CC) -c fy8.c -o fy8.o $(CFLAGS)
+
+fy9.o: fy9.c
+	$(CC) -c fy9.c -o fy9.o $(CFLAGS)
+
+abscisses.o: abscisses.c
+	$(CC) -c abscisses.c -o abscisses.o $(CFLAGS)
+
+ordonnees.o: ordonnees.c
+	$(CC) -c ordonnees.c -o ordonnees.o $(CFLAGS)
+
+RemplirTableauAvecFonction.o: RemplirTableauAvecFonction.c
+	$(CC) -c RemplirTableauAvecFonction.c -o RemplirTableauAvecFonction.o $(CFLAGS)
+
+Afficher.o: Afficher.c
+	$(CC) -c Afficher.c -o Afficher.o $(CFLAGS)
